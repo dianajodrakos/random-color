@@ -1,8 +1,8 @@
 import React from 'react';
-import Display from '../random-color/Display';
+import RandomColor from '../../containers/RandomColor';
 
 export default function App() {
   return <>
-    <Display />
+    <RandomColor />
   </>;
 }
