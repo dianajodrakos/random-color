@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import style from './display.css';
 const Display = ({ color1, color2, color3 }) => {
   return <div 
+    role="main"
     className={style.randomColor} 
     style={
       { 
