@@ -2,8 +2,18 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <h1>
-    Hello World
-  </h1>
+  <div>
+    <div
+      class="randomColor"
+      style="background: rgb(117, 239, 213); color: rgb(119, 232, 67); border-color: #30f90c;"
+    >
+      <p>
+        HELLO
+      </p>
+      <p>
+        WORLD
+      </p>
+    </div>
+  </div>
 </DocumentFragment>
 `;
