@@ -3,12 +3,16 @@ import Display from '../components/random-color/Display';
 
 export default class RandomColor extends Component {
 
-  render() {
+state = {
+  color: 'red'
+}
 
-    return (
-      <div>
-        <Display />
-      </div>
-    );
-  }
+render() {
+
+  return (
+    <div>
+      <Display color={this.state.color} />
+    </div>
+  );
+}
 }
