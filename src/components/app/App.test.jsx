@@ -8,7 +8,7 @@ describe('App component', () => {
     const { asFragment } = render(<App />);
 
     const div = screen.getByRole('main');
-    const p = screen.getByText('HELLO');
+    const p = screen.getByRole('text');
 
     expect(asFragment()).not.toBeEmptyDOMElement;
     expect(div).toContainElement(p);

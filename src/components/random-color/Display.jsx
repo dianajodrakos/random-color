@@ -16,7 +16,7 @@ const Display = ({ color, countdown }) => {
           borderColor: color4,
         }}
       >
-        <p className={style.donetext}>
+        <p role="text" className={style.donetext}>
           &nbsp; &nbsp; &nbsp;&lt;3 &lt;3 &lt;3 &lt;3 &lt;3
           <span style={{ color: color3 }}>YOU&apos;RE DONE </span> &lt;3 &lt;3
           <span style={{ color: color5 }}> GO REST </span> &lt;3 &lt;3 &lt;3
@@ -36,7 +36,9 @@ const Display = ({ color, countdown }) => {
         borderColor: color4,
       }}
     >
-      <p className={style.text}>YOU HAVE</p>
+      <p role="text" className={style.text}>
+        YOU HAVE
+      </p>
       <p className={style.count} style={{ color: color3 }}>
         {countdown}
       </p>
