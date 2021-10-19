@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import style from './display.css';
 
-const Display = ({ color1, color2, color3, color4, color5, countdown }) => {
+const Display = ({ color, countdown }) => {
+  const [color1, color2, color3, color4, color5] = color;
   if(countdown === 'DONE')
     return (
       <div
@@ -39,17 +40,13 @@ const Display = ({ color1, color2, color3, color4, color5, countdown }) => {
       <p className={style.count} style={{ color: color3 }}>
         {countdown}
       </p>
-      <p className={style.text}>DAYS UNTIL THIS BACKEND SHITSHOW IS OVER</p>
+      <p className={style.text}>DAYS UNTIL THIS IS OVER</p>
     </div>
   );
 };
 
 Display.propTypes = {
-  color1: PropTypes.string.isRequired,
-  color2: PropTypes.string.isRequired,
-  color3: PropTypes.string.isRequired,
-  color4: PropTypes.string.isRequired,
-  color5: PropTypes.string.isRequired,
+  color: PropTypes.array.isRequired,
   countdown: PropTypes.string.isRequired,
 };
 
