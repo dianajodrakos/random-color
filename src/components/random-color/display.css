@@ -1,16 +1,30 @@
 .randomColor {
-  height: 50vh;
-  width: 50vw;
+  height: 55vh;
+  width: 60vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 18vw;
-  font-weight: bolder;
   border-style: solid;
   border-width: 5vh;
 }
-.randomColor p {
+
+p.text {
+  width: 75vw;
+  font-size: 6vw;
   margin: 0;
   padding: 3vh;
+}
+
+p.donetext {
+  width: 75vw;
+  font-size: 9vw;
+  margin: 0;
+  padding: 3vh;
+}
+
+p.count {
+  font-weight: bolder;
+  font-size: 9vw;
+  margin: 0;
 }
